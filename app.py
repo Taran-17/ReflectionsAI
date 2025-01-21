@@ -11,7 +11,7 @@ MODELS = ["mistral-large2"]
 
 # Enhanced page config
 st.set_page_config(
-    page_title="Digital Journal",
+    page_title="ReflectionsAI",
     page_icon="📖",
     layout="centered",
     initial_sidebar_state="expanded"
