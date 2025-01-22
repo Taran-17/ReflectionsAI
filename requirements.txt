@@ -1,0 +1,6 @@
+﻿streamlit
+configparser
+snowflake-snowpark-python
+sentence-transformers
+snowflake-ml-python
+snowflake-python-connector
