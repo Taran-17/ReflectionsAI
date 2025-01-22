@@ -2,4 +2,3 @@
 configparser
 snowflake-snowpark-python
 sentence-transformers
-snowflake-python-connector
