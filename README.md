@@ -1,5 +1,5 @@
-Here's a detailed and polished **README.md** for your hackathon project:
-
+FOR RUNNING THE STREAMLIT APP HEAD TO THIS LINK-- https://app.snowflake.com/zwsbgmi/hn21078/#/streamlit-apps/JOURNAL_DB.PUBLIC.CI5VO7Z1K3O47P7L?ref=snowsight_shared
+then login with these credentials- Username - username- namay,pass- Streamlit@2025
 ---
 
 # ReflectionsAI 📖✨  
