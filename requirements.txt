@@ -1,6 +1,6 @@
 ﻿streamlit
 configparser
+snowflake-ml-python1.7.3
 snowflake-snowpark-python
 snowflake.core1.0.2
-snowflake-ml-python1.7.3
 sentence-transformers
