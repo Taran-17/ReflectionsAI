@@ -264,7 +264,7 @@ def make_chat_history_summary(chat_history, question):
     """
 
     # Generate the summary using the selected model
-    summary = complete(st.session_state.model_name, prompt)
+    summary = complete(session, st.session_state.model_name, prompt)
 
     # If debug mode is enabled, display the summary in the sidebar for review
     if st.session_state.debug:
@@ -475,7 +475,7 @@ def main():
                 prompt, results = create_prompt(question)
 
                 with st.spinner("Thinking..."):
-                    generated_response = complete(
+                    generated_response = complete(session,
                         st.session_state.model_name, prompt
                     )
                     message_placeholder.markdown(generated_response + "\n\n")
