@@ -317,7 +317,7 @@ def write_journal_entry():
                     [journal_title, journal_entry, timestamp],
                 ).collect()
 
-                st.success("Your journal entry has been saved successfully!, Memories will be updated within a few minutes!")
+                st.success("Your journal entry has been saved successfully!, Memories will be updated within 1 minute!")
             except Exception as e:
                 st.error(f"An error occurred while saving your journal entry: {e}")
 
