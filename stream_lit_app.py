@@ -229,7 +229,7 @@ def complete(session, model, prompt):
         str: The generated completion for the journal app's context.
     """
     # Generate completion using the provided model and prompt, handling special characters like "$"
-    response = session.Complete(model, prompt).replace("$", "\$")
+    response = Complete(model, prompt, session = session).replace("$", "\$")
     
     # If you need further customization or formatting (like adding references or other elements), 
     # you can modify the returned response here.
