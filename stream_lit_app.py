@@ -217,7 +217,7 @@ def get_chat_history():
     # Return the limited list of chat messages
     return st.session_state.messages[start_index:]
 
-def complete(model, prompt):
+def complete(session, model, prompt):
     """
     Generate a completion for the given prompt using the specified model.
 
@@ -229,7 +229,7 @@ def complete(model, prompt):
         str: The generated completion for the journal app's context.
     """
     # Generate completion using the provided model and prompt, handling special characters like "$"
-    response = Complete(model, prompt).replace("$", "\$")
+    response = session.Complete(model, prompt).replace("$", "\$")
     
     # If you need further customization or formatting (like adding references or other elements), 
     # you can modify the returned response here.
