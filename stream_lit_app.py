@@ -1,26 +1,31 @@
+# import streamlit as st
+# from snowflake.core import Root
+# from snowflake.cortex import Complete
+# from snowflake.snowpark.context import get_active_session
 import streamlit as st
 from snowflake.core import Root
 from snowflake.cortex import Complete
 from snowflake.snowpark.context import get_active_session
-
-Initialize session and root
-session = get_active_session()
-root = Root(session)
-
-# MODELS = ["mistral-large2"]
-# def create_session():
-#     """Create a Snowflake session using configuration details."""
-#     config = configparser.ConfigParser()
-#     config.read('properties.ini')
-#     snowflake_config = config['Snowflake']
-
-#     connection_params = {key: snowflake_config.get(key) for key in
-#                          ['account', 'user', 'password', 'role', 'warehouse', 'database', 'schema']}
-#     session = Session.builder.configs(connection_params).create()
-#     return session
-
-# session = create_session()
+from snowflake.snowpark import Session
+import configparser
+# Initialize session and root
+# session = get_active_session()
 # root = Root(session)
+
+MODELS = ["mistral-large2"]
+def create_session():
+    """Create a Snowflake session using configuration details."""
+    config = configparser.ConfigParser()
+    config.read('properties.ini')
+    snowflake_config = config['Snowflake']
+
+    connection_params = {key: snowflake_config.get(key) for key in
+                         ['account', 'user', 'password', 'role', 'warehouse', 'database', 'schema']}
+    session = Session.builder.configs(connection_params).create()
+    return session
+
+session = create_session()
+root = Root(session)
 # Enhanced page config
 st.set_page_config(
     page_title="ReflectionsAI",
