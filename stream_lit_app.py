@@ -400,7 +400,7 @@ def home_page():
     """
     st.markdown("""
         <div style='text-align: center; padding: 2rem;'>
-            <h1 style='color: #9c27b0; margin-bottom: 2rem;'>✨ Welcome to ReflectionsAI ✨</h1>
+            <h1 style='color: #9c27b0; margin-bottom: 2rem;'>✨Welcome to ReflectionsAI✨</h1>
         </div>
     """, unsafe_allow_html=True)
     
