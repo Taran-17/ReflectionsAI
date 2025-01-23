@@ -485,6 +485,6 @@ def main():
             )
 
 if __name__ == "__main__":
-    session = get_active_session()
-    root = Root(session)
+    # session = get_active_session()
+    # root = Root(session)
     main()
